@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+
+    /* colors background */
+
+    --Coraille: #ed786a; /*et aussi au survol*/
+    --gris: #e5e5e5;
+    --gris_anthracite:#878787;
+    --border:#ebebeb;
+
+    /* couleurs liens */
+
+    --gris_link:#888;
+
+    /* Text color  */
+
+    --grey:#888;
+    --black:#000;
+    --white:#FFF;
+}
+
+/* Classes custom pour les couleurs */
+
+.Corail{
+    color: var(--Coraille);
+}
+
+.bg-Corail{
+    background-color: var(--Coraille);
+    border: none;
+}
+
+.bg-grey{
+    background-color: var(--grey);
+}
+
+.bg-grey2{
+    background-color: var(--gris);
+}
+
+.grey{
+    color: var(--gris_anthracite);
+}
+
+.drakgrey{
+    color: var(--grey);
+}
+
+.bbg{
+    border-bottom: solid 3px var(--grey);
+    border-radius: 0;
+}
+
+.list-group{
+    --bs-list-group-bg: rgba(255, 255, 255, 0);
+}
+
+/* Retouche taille police */
+
+.fs-customh1{
+    font-size: 3rem;
+}
+
+.fs-custom1{
+    font-size: 0.8rem;
+}
+
+/* Retouche padding et margin */
+
+.pb-custom{
+    padding-bottom: 5rem;
+}
+
+.pt-custom{
+    padding-top: 5rem;
+}
+
+.mb-custom2{
+    margin-bottom: 5rem;
+}
+
+.mt-custom{
+    margin-top: 8rem;
+}
+
+.me-custom{
+    margin-right: 4rem;
+}
+
+/* Retouche line-heigth*/
+
+.spacing{
+    letter-spacing: .5rem;
+}
+
+/* Classe pour la police */
+
+.Titled_font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}  
+
+.Subtitle_font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}  
+
+.Text_font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/* pour voir les bordures des Elements*/
+
+/* header{
+    border: 5px solid green;
+} */
+
+/* main{
+    border: 5px solid  orange;
+}
+
+footer{
+    border: 5px solid red;
+}
+
+.row{
+    border: 3px solid black;
+}
+
+.col,.col-4,.col-6,.col-5,.col-12,.col-3{
+    border: 2px solid grey;
+}
+
+.carousel{
+    border: 4px solid violet;
+} */
+
+/* retouche des propriete css de bootstrap*/
+
+/* Retouche des hover des bouton */
+
+.btn:hover{
+    transform: scale(1.05);
+    background-color: var(--Coraille);
+    transition: all 200ms ease-in;
+}
+
+/* retouche des links de la nav*/
+
+.nav-item a{
+    color: var(--gris_link);
+    font-size: .8rem;
+}
+
+.nav-item a:hover{
+    color: var(--Coraille);
+    cursor: pointer;
+}
+
+.nav-item a:hover i{
+    background-color: var(--Coraille);
+    cursor: pointer;
+}
+
+/* Retouche du menu deroulant */
+
+.dropdown-menu li{
+    border-bottom: solid 1px var(--gris_anthracite);
+}
+.dropdown-menu li:nth-child(5){
+    border-bottom: none;
+}
+
+/* classe pictogramme */
+
+.bi{
+    background-color: var(--gris_anthracite);
+    border-radius: 50%;
+    color: #FFF;
+    padding: 2%;
+    font-size: 11px;
+}
+
+/* Hover Image */ 
+
+.img_h:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
