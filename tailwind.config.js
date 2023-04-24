@@ -23,10 +23,12 @@ module.exports = {
         "underline-offset-thick": "8px"
       },
       width: {
-        "max-w-imgM":"50%"
+        "max-w-imgM":"600px",
+        "max-w-imglg":"650px",
       },
       screens: {
-        'ssm': '410px'
+        'ssm': '410px',
+        'blg': '1200px'
       }
     },
     

@@ -14,14 +14,13 @@
     
     <body class="bg-greenD w-full h-auto text-white m-0 p-0 list-none relative">
         <!-- ---------------------------- NAVBAR PHONE ---------------------------- -->
-        <nav id="navbar" class=" transition-all duration-500 absolute -translate-x-full top-0 left-0 w-full h-screen p-3 pt-14  bg-greenD bg-opacity-95 backdrop-blur-sm z-20 flex justify-evenly gap-4 items-center flex-col">
+        <nav id="navbar" class=" transition-all duration-500 absolute -translate-x-full top-0 left-0 w-full h-screen p-3 pt-14  bg-greenD bg-opacity-95 backdrop-blur-sm z-30 flex justify-evenly gap-4 items-center flex-col md:hidden">
             <ul class="flex justify-evenly gap-4 items-center flex-col">
-                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Home" class="text-[30px] font-bold cursor-pointer">Home</a></li>
-                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#About" class="text-[30px] font-bold cursor-pointer">About</a></li>
-                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Project" class="text-[30px] font-bold cursor-pointer">Project</a></li>
-                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Contact" class="text-[30px] font-bold cursor-pointer">Contact</a></li>
+                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Home" class="text-[25px] font-bold cursor-pointer">Home</a></li>
+                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#About" class="text-[25px] font-bold cursor-pointer">About</a></li>
+                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Project" class="text-[25px] font-bold cursor-pointer">Project</a></li>
+                <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Contact" class="text-[25px] font-bold cursor-pointer">Contact</a></li>
             </ul>
-
             <section class="flex flex-row items-center gap-3">
                 <a href="./assets/img/Cv StageAlternance.pdf" class="bg-greenB shadow-lg text-[22px]
                 font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB">CV</a>
@@ -32,25 +31,41 @@
             <button id="close"><i class="fa-solid fa-xmark absolute top-5 left-5 text-[40px] text-greenYellow cursor-pointer"></i></button>
         </nav>
         <!-- ---------------------------- HEADER ---------------------------- -->
-        <header id="#Home" class="bg-cs bg-blend-luminosity bg-greenB bg-no-repeat bg-cover      relative h-screen flex flex-col justify-start p-6 gap-10">
+        <header id="#Home" class="bg-cs bg-blend-luminosity bg-greenB bg-no-repeat bg-cover relative h-screen flex flex-col justify-start p-6 gap-10 md:gap-16">
+
+            <div class="absolute top-0 left-0 z-10 w-full h-full bg-greenD opacity-50"></div>
+            <!-- ---------------------------- Header Nav desktop mode ---------------------------- -->
+            <nav class="w-full p-3 hidden justify-between gap-4 items-center flex-row md:flex z-20">
+                <section class="flex flex-row items-center gap-3">
+                    <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[30px] lg:text-[35px] text-greenYellow"></i></a>
+                    <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[30px] lg:text-[35px] text-greenYellow"></i></a>
+                </section>
+                <ul class="flex gap-4 items-center flex-row">
+                    <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit"><a href="#Home" class="text-[23px] lg:text-[28px] font-bold cursor-pointer">Home</a></li>
+                    <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit"><a href="#About" class="text-[23px] lg:text-[28px] font-bold cursor-pointer">About</a></li>
+                    <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit"><a href="#Project" class="text-[23px] lg:text-[28px] font-bold cursor-pointer">Project</a></li>
+                    <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit"><a href="#Contact" class="text-[23px] lg:text-[28px] font-bold cursor-pointer">Contact</a></li>
+                    <li class="text-[28px] lg:text-[30px] font-semibold"><a href="./assets/img/Cv StageAlternance.pdf" class="bg-greenB drop-shadow-lg shadow-black p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB">CV</a></li>
+                </ul>
+            </nav>
             <!-- ---------------------------- Header top ---------------------------- -->
-            <section class="flex flex-row justify-between items-center mb-10 ">
-                <button id="open"><i class="fa-solid fa-bars text-[40px] text-greenYellow cursor-pointer"></i></button>
+            <section class="flex flex-row justify-between items-center mb-5 md:hidden z-20">
+                <button id="open"><i class="fa-solid fa-bars text-[40px] sm:text-[50px] text-greenYellow cursor-pointer"></i></button>
                 <section class="flex flex-row items-center gap-3">
                     <a href="./assets/img/Cv StageAlternance.pdf" class="bg-greenB shadow-lg text-[22px]
-                    font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB">CV</a>
-                    <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[25px] text-greenYellow"></i></a>
-                    <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[25px] text-greenYellow"></i></a>
+                    sm:text-[25px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB">CV</a>
+                    <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] text-greenYellow"></i></a>
+                    <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[25px] sm:text-[30px] text-greenYellow"></i></a>
                 </section>
             </section>
             <!-- ---------------------------- Header Content ---------------------------- -->
-            <section class="flex flex-col items-center gap-10 w-full">
-                <div class="max-w-[80%]">
-                    <img src="./assets/img/title art 4.svg" alt="" class=" w-full">
+            <section class="flex flex-col items-center gap-10 md:gap-[0] w-full z-20 h-full lg:px-24">
+                <div class="w-[80%] md:w-max-w-imgM md:self-start blg:w-max-w-imglg">
+                    <img src="./assets/img/title art 4.svg" alt="" class="w-full">
                 </div>
-                <article class="flex flex-col justify-center gap-2 items-center">
-                    <h2 class="font-semibold text-[28px] text-center w-full ">Commencer la visite</h2>
-                    <a href="#About" class="bg-greenB py-2 px-3 flex justify-center items-center cursor-pointer transition-all duration-200 hover:bg-white hover:text-greenB"><i class="fa-solid fa-arrow-down text-[35px] drop-shadow-lg"></i></a>
+                <article class="flex flex-col justify-center gap-4 items-center w-full md:flex-row self-end md:justify-end md:mt-8">
+                    <h2 class="font-semibold text-[28px] lg:text-[31px] xl:text-[38px] text-center">Commencer la visite</h2>
+                    <a href="#About" class="bg-greenB py-2 px-3 flex justify-center items-center cursor-pointer transition-all duration-200 hover:bg-white hover:text-greenB"><i class="fa-solid fa-arrow-down text-[35px] lg:text-[40px] xl:text-[44px] drop-shadow-lg"></i></a>
                 </article>
             </section>
         </header>
