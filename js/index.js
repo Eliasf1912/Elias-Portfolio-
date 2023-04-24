@@ -1,6 +1,6 @@
 const open = document.getElementById("open");
 const close = document.getElementById("close");
-const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar")
 
 open.addEventListener("click", ()=> {
     navbar.classList.remove("-translate-x-full");
