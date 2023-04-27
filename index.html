@@ -71,11 +71,11 @@
             </section>
         </header>
         <!-- ---------------------------- MAIN ---------------------------- -->
-        <main>
+        <main class="overflow-hidden my-[60px]">
             <!-- ---------------------------- SECTION ABOUT ---------------------------- -->
-            <section id="About" class="py-[60px] px-[40px] flex flex-col items-center mt-6">
+            <section id="About" class="flex flex-col items-center mt-12 gap-[60px]">
                 <!-- ---------------------------- About_INTRO ---------------------------- -->
-                <section class="flex flex-col items-center mb-9 w-full">
+                <section class="flex flex-col items-center mb-9 w-full px-[40px]">
                     <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px]">About</h3>
                     <div class="flex flex-col items-center gap-8">
                         <p class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenB rounded-2xl sm:hidden">Je m’appelle Elias Duvernois et j’ai 21 ans, je suis actuellement étudiant en 2éme année d’un bachelor développeut Web à Paris à l’école Multimedia.</p>
@@ -92,39 +92,42 @@
                         <img src="./assets/img/Group2.svg" alt="about-text" class="w-full hidden sm:block">
                     </div>
                 </section>
-                <!-- ---------------------------- About_INTRO ---------------------------- -->
-                <section class="flex flex-col items-center mb-9 w-full">
-                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px]">skills</h3>
-                    <div class="flex flex-row flex-wrap justify-center">
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-html5 text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">HTML</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-css3-alt text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">CSS</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-bootstrap text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">Bootstrap</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-js text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">Javascript</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-git-alt text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">GIT</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-react text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">React</h4>
-                        </article>
-                        <article class="flex flex-col items-center p-3">
-                            <i class="fa-brands fa-figma text-[90px] text-greenB"></i>
-                            <h4 class="font-bold text-2xl">Figma</h4>
-                        </article>
-                    </div>
+                <!-- ---------------------------- About_Skill ---------------------------- -->
+                <section class="relative mb-9 w-full">
+                    <div class="absolute top-0 left-[-5%] w-[120%] h-[120%] rotate-3 bg-greenS -z-10"></div>
+                    <section class="flex flex-col items-center p-[40px]">
+                        <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px]">skills</h3>
+                        <div class="flex flex-row flex-wrap justify-center items-center gap-4">
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-html5 text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">HTML</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-css3-alt text-[90px] lg:text-[110px] xl:text-[130px]  text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">CSS</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-bootstrap text-[90px] lg:text-[110px] xl:text-[130px]  text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">Bootstrap</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-js text-[90px] lg:text-[110px] xl:text-[130px]  text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">Javascript</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-git-alt text-[90px] lg:text-[110px] xl:text-[130px]  text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">GIT</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-react text-[90px] lg:text-[110px] xl:text-[130px]  text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">React</h4>
+                            </article>
+                            <article class="flex flex-col items-center p-3 gap-4">
+                                <i class="fa-brands fa-figma text-[90px] lg:text-[110px] xl:text-[130px]   text-greenB"></i>
+                                <h4 class="font-bold text-2xl lg:text-[28px]">Figma</h4>
+                            </article>
+                        </div>
+                    </section>
                 </section>
             </section>
         </main>
