@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* *{
+    border: red solid 3px;
+} */
+
 body{
     margin: 0;
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 5px;
+    bottom: -30%;
+    left: 0;
 }

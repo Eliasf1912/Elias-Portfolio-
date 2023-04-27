@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,9 @@
     </head>
 
     
-    <body class="bg-greenD w-full h-auto text-white m-0 p-0 list-none relative scroll-smooth">
+    <body class="bg-greenD w-full h-auto text-white m-0 p-0 list-none relative">
         <!-- ---------------------------- NAVBAR PHONE ---------------------------- -->
-        <nav id="navbar" class=" transition-all duration-500 absolute -translate-x-full top-0 left-0 w-full h-screen p-3 pt-14  bg-greenD bg-opacity-95 backdrop-blur-sm z-30 flex justify-evenly gap-4 items-center flex-col md:hidden">
+        <nav id="navbar" class=" transition-all duration-500 fixed -translate-x-full -top-[0] left-0 w-full h-screen p-3 pt-14  bg-greenD bg-opacity-95 backdrop-blur-sm z-50 flex justify-evenly gap-4 items-center flex-col md:hidden">
             <ul class="flex justify-evenly gap-4 items-center flex-col">
                 <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#Home" class="text-[25px] font-bold cursor-pointer">Home</a></li>
                 <li class=" transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"><a href="#About" class="text-[25px] font-bold cursor-pointer">About</a></li>
@@ -30,6 +30,7 @@
 
             <button id="close"><i class="fa-solid fa-xmark absolute top-5 left-5 text-[40px] text-greenYellow cursor-pointer"></i></button>
         </nav>
+
         <!-- ---------------------------- HEADER ---------------------------- -->
         <header id="#Home" class="bg-cs bg-blend-luminosity bg-greenB bg-no-repeat bg-cover relative h-screen flex flex-col justify-start p-6 gap-10 md:gap-16">
 
@@ -37,8 +38,8 @@
             <!-- ---------------------------- Header Nav desktop mode ---------------------------- -->
             <nav class="w-full p-3 hidden justify-between gap-4 items-center flex-row md:flex z-20">
                 <section class="flex flex-row items-center gap-3">
-                    <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[30px] lg:text-[35px] text-greenYellow"></i></a>
-                    <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[30px] lg:text-[35px] text-greenYellow"></i></a>
+                    <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[30px] lg:text-[35px] text-greenYellow"></i></a>
+                    <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[30px] lg:text-[35px] text-greenYellow"></i></a>
                 </section>
                 <ul class="flex gap-4 items-center flex-row">
                     <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit"><a href="#Home" class="text-[23px] lg:text-[28px] font-bold cursor-pointer">Home</a></li>
@@ -52,7 +53,7 @@
             <section class="flex flex-row justify-between items-center mb-5 md:hidden z-20">
                 <button id="open"><i class="fa-solid fa-bars text-[40px] sm:text-[50px] text-greenYellow cursor-pointer"></i></button>
                 <section class="flex flex-row items-center gap-3">
-                    <a href="./assets/img/Cv StageAlternance.pdf" class="bg-greenB shadow-lg text-[22px]
+                    <a href="./assets/img/CvStageAlternance.pdf" class="bg-greenB shadow-lg text-[22px]
                     sm:text-[25px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB">CV</a>
                     <a href="https://github.com/Eliasf1912" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] text-greenYellow"></i></a>
                     <a href="https://www.linkedin.com/in/elias-duvernois-1b440a213/" class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"><i class="fa-brands fa-github text-[25px] sm:text-[30px] text-greenYellow"></i></a>
@@ -60,24 +61,72 @@
             </section>
             <!-- ---------------------------- HEADER CONTENT ---------------------------- -->
             <section class="flex flex-col items-center gap-10 md:gap-[0] w-full z-20 h-full lg:px-24">
-                <div class="w-[80%] md:w-max-w-imgM md:self-start blg:w-max-w-imglg">
-                    <img src="./assets/img/title art 4.svg" alt="" class="w-full">
+                <div class="w-[80%] md:w-max-w-imgM md:self-start blg:max-w">
+                    <img src="./assets/img/titleart4.svg" alt="" class="w-full">
                 </div>
                 <article class="flex flex-col justify-center gap-4 items-center w-full md:flex-row self-end md:justify-end md:mt-8">
                     <h2 class="font-semibold text-[28px] lg:text-[31px] xl:text-[38px] text-center">Commencer la visite</h2>
                     <a href="#About" class="bg-greenB py-2 px-3 flex justify-center items-center cursor-pointer transition-all duration-200 hover:bg-white hover:text-greenB"><i class="fa-solid fa-arrow-down text-[35px] lg:text-[40px] xl:text-[44px] drop-shadow-lg"></i></a>
                 </article>
             </section>
-            <!-- ---------------------------- MAIN ---------------------------- -->
+        </header>
+        <!-- ---------------------------- MAIN ---------------------------- -->
         <main>
             <!-- ---------------------------- SECTION ABOUT ---------------------------- -->
-            <section id="#About">
-                <h3>About</h3>
-                <article>
-                    
-                </article>
+            <section id="About" class="py-[60px] px-[40px] flex flex-col items-center mt-6">
+                <!-- ---------------------------- About_INTRO ---------------------------- -->
+                <section class="flex flex-col items-center mb-9 w-full">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px]">About</h3>
+                    <div class="flex flex-col items-center gap-8">
+                        <p class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenB rounded-2xl sm:hidden">Je m’appelle Elias Duvernois et j’ai 21 ans, je suis actuellement étudiant en 2éme année d’un bachelor développeut Web à Paris à l’école Multimedia.</p>
+    
+                        <figure class="rounded-[50%] bg-greenB p-2 w-[80%] sm:hidden">
+                            <img src="./assets/img/informatique.jpg" class="w-full rounded-[50%]" alt="imformatique">
+                        </figure>
+    
+                        <p class="text-base sm:text-[18px] p-4 border-4  bg-greenD border-greenYellow rounded-2xl sm:hidden">J’ai découvert le développement grâce à ma passion pour les jeux vidéo et j’ai aussi un attrait pour l’animation. C’est pour cela que j’ai choisi de me lancée dans le développement web où je peux combiner ces deux choses pour crée et réaliser des projet à mon image.</p>
+    
+                        <figure class="rounded-[50%] bg-greenYellow p-2 w-[80%] sm:hidden">
+                            <img src="./assets/img/informatique.jpg" class="w-full rounded-[50%]" alt="imformatique">
+                        </figure>
+                        <img src="./assets/img/Group2.svg" alt="about-text" class="w-full hidden sm:block">
+                    </div>
+                </section>
+                <!-- ---------------------------- About_INTRO ---------------------------- -->
+                <section class="flex flex-col items-center mb-9 w-full">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px]">skills</h3>
+                    <div class="flex flex-row flex-wrap justify-center">
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-html5 text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">HTML</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-css3-alt text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">CSS</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-bootstrap text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">Bootstrap</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-js text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">Javascript</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-git-alt text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">GIT</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-react text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">React</h4>
+                        </article>
+                        <article class="flex flex-col items-center p-3">
+                            <i class="fa-brands fa-figma text-[90px] text-greenB"></i>
+                            <h4 class="font-bold text-2xl">Figma</h4>
+                        </article>
+                    </div>
+                </section>
             </section>
         </main>
-        </header>
     </body>
 </html>

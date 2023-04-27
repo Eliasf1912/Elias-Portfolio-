@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         'greenD' : "#3D550C",
         'greenYellow' : "#ECF87F",
-        'greenB' : "#81B622"
+        'greenB' : "#81B622",
+        'greenS': "rgba(0, 0, 0, 0.25)"
       },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
