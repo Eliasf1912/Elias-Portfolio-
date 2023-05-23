@@ -867,11 +867,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pt-10{
   padding-top: 2.5rem;
 }
@@ -891,6 +886,10 @@ video {
 
 .text-\[15px\]{
   font-size: 15px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
 }
 
 .text-\[18px\]{
@@ -944,18 +943,6 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-\[38px\]{
-  font-size: 38px;
-}
-
-.text-\[16px\]{
-  font-size: 16px;
-}
-
-.text-\[17px\]{
-  font-size: 17px;
 }
 
 .font-bold{
@@ -1083,6 +1070,11 @@ h3::after{
   width: 180px;
 }
 
+.after\:w-\[190px\]::after{
+  content: var(--tw-content);
+  width: 190px;
+}
+
 .after\:bg-greenYellow::after{
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -1159,16 +1151,16 @@ h3::after{
     font-size: 25px;
   }
 
+  .sm\:text-\[28px\]{
+    font-size: 28px;
+  }
+
   .sm\:text-\[30px\]{
     font-size: 30px;
   }
 
   .sm\:text-\[50px\]{
     font-size: 50px;
-  }
-
-  .sm\:text-\[28px\]{
-    font-size: 28px;
   }
 }
 
@@ -1253,19 +1245,9 @@ h3::after{
     width: 160px;
   }
 
-  .md\:after\:w-\[180px\]::after{
+  .md\:after\:w-\[190px\]::after{
     content: var(--tw-content);
-    width: 180px;
-  }
-
-  .md\:after\:w-\[200px\]::after{
-    content: var(--tw-content);
-    width: 200px;
-  }
-
-  .md\:after\:w-\[230px\]::after{
-    content: var(--tw-content);
-    width: 230px;
+    width: 190px;
   }
 }
 
@@ -1326,24 +1308,8 @@ h3::after{
     font-size: 40px;
   }
 
-  .lg\:text-\[50px\]{
-    font-size: 50px;
-  }
-
   .lg\:text-\[55px\]{
     font-size: 55px;
-  }
-
-  .lg\:text-\[45px\]{
-    font-size: 45px;
-  }
-
-  .lg\:text-\[38px\]{
-    font-size: 38px;
-  }
-
-  .lg\:text-\[33px\]{
-    font-size: 33px;
   }
 
   .lg\:after\:h-\[8px\]::after{
@@ -1354,6 +1320,16 @@ h3::after{
   .lg\:after\:w-\[180px\]::after{
     content: var(--tw-content);
     width: 180px;
+  }
+
+  .lg\:after\:w-\[230px\]::after{
+    content: var(--tw-content);
+    width: 230px;
+  }
+
+  .lg\:after\:w-\[250px\]::after{
+    content: var(--tw-content);
+    width: 250px;
   }
 }
 
