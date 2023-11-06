@@ -1,634 +1,725 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="keyword"
-			content="portfolio, HTML, CSS , stage , alternance , projet , tailwind" />
-		<link rel="stylesheet" href="./dist/style.css" />
-		<script
-			src="https://kit.fontawesome.com/56dfd30af5.js"
-			crossorigin="anonymous"
-			defer></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-			defer></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
-			defer></script>
-		<script src="./js/index.js" defer></script>
-		<title>Portfolio Elias Duvernois</title>
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keyword"
+      content="portfolio, HTML, CSS , stage , alternance , projet , tailwind"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/56dfd30af5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./js/index.js" defer></script>
+    <title>Portfolio Elias Duvernois</title>
+  </head>
 
-	<body class="bg-greenD w-full h-auto text-white m-0 p-0 list-none relative">
-		<!-- ---------------------------- NAVBAR PHONE ---------------------------- -->
-		<nav
-			id="navbar"
-			class="transition-all duration-500 fixed -translate-x-full -top-[0] left-0 w-full h-screen p-3 pt-14 bg-greenD bg-opacity-95 backdrop-blur-sm z-50 flex justify-evenly gap-4 items-center flex-col md:hidden">
-			<ul class="flex justify-evenly gap-4 items-center flex-col navbarP-anim">
-				<li
-					class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit">
-					<a href="#Home" class="text-[25px] font-bold cursor-pointer"
-						>Accueil</a
-					>
-				</li>
-				<li
-					class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit">
-					<a href="#About" class="text-[25px] font-bold cursor-pointer"
-						>A propos</a
-					>
-				</li>
-				<li
-					class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit">
-					<a href="#Project" class="text-[25px] font-bold cursor-pointer"
-						>Projet</a
-					>
-				</li>
-				<li
-					class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit">
-					<a href="#Contact" class="text-[25px] font-bold cursor-pointer"
-						>Contact</a
-					>
-				</li>
-			</ul>
-			<section class="flex flex-row items-center gap-3">
-				<a
-					href="./assets/img/CV ELIAS2 (1).pdf"
-					class="bg-greenB shadow-lg text-[22px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
-					>CV</a
-				>
-				<a
-					href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
-					class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
-					><i class="fa-brands fa-linkedin-in text-[25px] text-greenYellow"></i
-				></a>
-				<a
-					href="https://github.com/Eliasf1912"
-					class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
-					><i class="fa-brands fa-github text-[25px] text-greenYellow"></i
-				></a>
-			</section>
+  <body class="bg-greenD w-full h-auto text-white m-0 p-0 list-none relative">
+    <!-- ---------------------------- NAVBAR PHONE ---------------------------- -->
+    <nav
+      id="navbar"
+      class="transition-all duration-500 fixed -translate-x-full -top-[0] left-0 w-full h-screen p-3 pt-14 bg-greenD bg-opacity-95 backdrop-blur-sm z-50 flex justify-evenly gap-4 items-center flex-col md:hidden"
+    >
+      <ul class="flex justify-evenly gap-4 items-center flex-col navbarP-anim">
+        <li
+          class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"
+        >
+          <a href="#Home" class="text-[25px] font-bold cursor-pointer"
+            >Accueil</a
+          >
+        </li>
+        <li
+          class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"
+        >
+          <a href="#About" class="text-[25px] font-bold cursor-pointer"
+            >A propos</a
+          >
+        </li>
+        <li
+          class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"
+        >
+          <a href="#Project" class="text-[25px] font-bold cursor-pointer"
+            >Projet</a
+          >
+        </li>
+        <li
+          class="transition-all duration-200 hover:border-b-8 hover:border-b-greenYellow p-1 w-fit"
+        >
+          <a href="#Contact" class="text-[25px] font-bold cursor-pointer"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <section class="flex flex-row items-center gap-3">
+        <a
+          href="./assets/img/CV ELIAS2 B.pdf"
+          class="bg-greenB shadow-lg text-[22px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
+          >CV</a
+        >
+        <a
+          href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
+          class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
+          ><i class="fa-brands fa-linkedin-in text-[25px] text-greenYellow"></i
+        ></a>
+        <a
+          href="https://github.com/Eliasf1912"
+          class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
+          ><i class="fa-brands fa-github text-[25px] text-greenYellow"></i
+        ></a>
+      </section>
 
-			<button id="close">
-				<i
-					class="fa-solid fa-xmark absolute top-5 left-5 text-[40px] text-greenYellow cursor-pointer"></i>
-			</button>
-		</nav>
+      <button id="close">
+        <i
+          class="fa-solid fa-xmark absolute top-5 left-5 text-[40px] text-greenYellow cursor-pointer"
+        ></i>
+      </button>
+    </nav>
 
-		<!-- ---------------------------- HEADER ---------------------------- -->
-		<header
-			id="#Home"
-			class="bg-cs bg-blend-luminosity bg-greenB bg-no-repeat bg-cover relative h-screen flex flex-col justify-start p-6 gap-10 md:gap-16 overflow-hidden">
-			<div
-				class="absolute top-0 left-0 z-10 w-full h-full bg-greenD opacity-50"></div>
-			<!-- ---------------------------- Header Nav desktop mode ---------------------------- -->
-			<nav
-				class="w-full p-3 hidden justify-between gap-4 items-center flex-row md:flex z-20">
-				<section class="flex flex-row items-center gap-3">
-					<a
-						href="https://github.com/Eliasf1912"
-						class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 top-anim"
-						><i
-							class="fa-brands fa-github text-[30px] lg:text-[35px] text-greenYellow"></i
-					></a>
-					<a
-						href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
-						class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 top-anim"
-						><i
-							class="fa-brands fa-linkedin-in text-[30px] lg:text-[35px] text-greenYellow"></i
-					></a>
-				</section>
-				<ul class="flex gap-4 items-center flex-row navbar-anim">
-					<li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
-						<a
-							href="#Home"
-							class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
-							>Accueil</a
-						>
-					</li>
-					<li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
-						<a
-							href="#About"
-							class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
-							>A propos</a
-						>
-					</li>
-					<li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
-						<a
-							href="#Project"
-							class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
-							>Projet</a
-						>
-					</li>
-					<li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
-						<a
-							href="#Contact"
-							class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
-							>Contact</a
-						>
-					</li>
-					<li class="text-[28px] lg:text-[30px] font-semibold">
-						<a
-							href="./assets/img/CV ELIAS2 (1).pdf"
-							class="bg-greenB drop-shadow-lg shadow-black p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
-							>CV</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<!-- ---------------------------- Header top ---------------------------- -->
-			<section
-				class="flex flex-row justify-between items-center mb-5 md:hidden z-20 navbarP-anim">
-				<button id="open">
-					<i
-						class="fa-solid fa-bars text-[40px] sm:text-[50px] text-greenYellow cursor-pointer"></i>
-				</button>
-				<section class="flex flex-row items-center gap-3">
-					<a
-						href="./assets/img/CV ELIAS2 (1).pdf"
-						class="bg-greenB shadow-lg text-[22px] sm:text-[25px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
-						>CV</a
-					>
-					<a
-						href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
-						class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
-						><i
-							class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] text-greenYellow"></i
-					></a>
-					<a
-						href="https://github.com/Eliasf1912"
-						class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
-						><i
-							class="fa-brands fa-github text-[25px] sm:text-[30px] text-greenYellow"></i
-					></a>
-				</section>
-			</section>
-			<!-- ---------------------------- HEADER CONTENT ---------------------------- -->
-			<section
-				class="flex flex-col items-center gap-10 md:gap-[0] w-full z-20 h-full lg:px-24">
-				<div
-					class="w-[80%] md:w-max-w-imgM md:self-start blg:max-w headerC-anim">
-					<img src="./assets/img/titleart4.svg" alt="" class="w-full" />
-				</div>
-				<article
-					class="flex flex-col justify-center gap-4 items-center w-full md:flex-row self-end md:justify-end md:mt-8 headerC-anim2">
-					<h2
-						class="font-semibold text-[28px] lg:text-[31px] xl:text-[38px] text-center">
-						Commencer la visite
-					</h2>
-					<a
-						href="#About"
-						class="bg-greenB py-2 px-3 flex justify-center items-center cursor-pointer transition-all duration-200 hover:bg-white hover:text-greenB"
-						><i
-							class="fa-solid fa-arrow-down text-[35px] lg:text-[40px] xl:text-[44px] drop-shadow-lg"></i
-					></a>
-				</article>
-			</section>
-		</header>
-		<!-- ---------------------------- MAIN ---------------------------- -->
-		<main class="overflow-hidden my-[60px]">
-			<!-- ---------------------------- SECTION ABOUT ---------------------------- -->
-			<section
-				id="About"
-				class="flex flex-col items-center mt-12 gap-[60px] About">
-				<!-- ---------------------------- About_INTRO ---------------------------- -->
-				<section class="flex flex-col items-center mb-9 w-full px-[40px]">
-					<h3
-						class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] h3-anim">
-						A propos
-					</h3>
-					<div class="flex flex-col items-center gap-8">
-						<p
-							class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenB rounded-2xl sm:hidden AboutC">
-							Je m’appelle Elias Duvernois et j’ai 21 ans, je suis actuellement
-							étudiant en 2éme année d’un bachelor développeur Web à Paris à
-							l’Ecole Multimedia.
-						</p>
+    <!-- ---------------------------- HEADER ---------------------------- -->
+    <header
+      id="#Home"
+      class="bg-cs bg-blend-luminosity bg-greenB bg-no-repeat bg-cover relative h-screen flex flex-col justify-start p-6 gap-10 md:gap-16 overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-0 z-10 w-full h-full bg-greenD opacity-50"
+      ></div>
+      <!-- ---------------------------- Header Nav desktop mode ---------------------------- -->
+      <nav
+        class="w-full p-3 hidden justify-between gap-4 items-center flex-row md:flex z-20"
+      >
+        <section class="flex flex-row items-center gap-3">
+          <a
+            href="https://github.com/Eliasf1912"
+            class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 top-anim"
+            ><i
+              class="fa-brands fa-github text-[30px] lg:text-[35px] text-greenYellow"
+            ></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
+            class="border-4 border-greenYellow px-3 py-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 top-anim"
+            ><i
+              class="fa-brands fa-linkedin-in text-[30px] lg:text-[35px] text-greenYellow"
+            ></i
+          ></a>
+        </section>
+        <ul class="flex gap-4 items-center flex-row navbar-anim">
+          <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
+            <a
+              href="#Home"
+              class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
+              >Accueil</a
+            >
+          </li>
+          <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
+            <a
+              href="#About"
+              class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
+              >A propos</a
+            >
+          </li>
+          <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
+            <a
+              href="#Project"
+              class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
+              >Projet</a
+            >
+          </li>
+          <li class="hover:border-b-4 hover:border-b-greenYellow p-1 w-fit">
+            <a
+              href="#Contact"
+              class="text-[23px] lg:text-[28px] font-bold cursor-pointer"
+              >Contact</a
+            >
+          </li>
+          <li class="text-[28px] lg:text-[30px] font-semibold">
+            <a
+              href="./assets/img/CV ELIAS2 B.pdf"
+              class="bg-greenB drop-shadow-lg shadow-black p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
+              >CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- ---------------------------- Header top ---------------------------- -->
+      <section
+        class="flex flex-row justify-between items-center mb-5 md:hidden z-20 navbarP-anim"
+      >
+        <button id="open">
+          <i
+            class="fa-solid fa-bars text-[40px] sm:text-[50px] text-greenYellow cursor-pointer"
+          ></i>
+        </button>
+        <section class="flex flex-row items-center gap-3">
+          <a
+            href="./assets/img/CV ELIAS2 B.pdf (1).pdf"
+            class="bg-greenB shadow-lg text-[22px] sm:text-[25px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB"
+            >CV</a
+          >
+          <a
+            href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
+            class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
+            ><i
+              class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] text-greenYellow"
+            ></i
+          ></a>
+          <a
+            href="https://github.com/Eliasf1912"
+            class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105"
+            ><i
+              class="fa-brands fa-github text-[25px] sm:text-[30px] text-greenYellow"
+            ></i
+          ></a>
+        </section>
+      </section>
+      <!-- ---------------------------- HEADER CONTENT ---------------------------- -->
+      <section
+        class="flex flex-col items-center gap-10 md:gap-[0] w-full z-20 h-full lg:px-24"
+      >
+        <div
+          class="w-[80%] md:w-max-w-imgM md:self-start blg:max-w headerC-anim"
+        >
+          <img src="./assets/img/titleart4.svg" alt="" class="w-full" />
+        </div>
+        <article
+          class="flex flex-col justify-center gap-4 items-center w-full md:flex-row self-end md:justify-end md:mt-8 headerC-anim2"
+        >
+          <h2
+            class="font-semibold text-[28px] lg:text-[31px] xl:text-[38px] text-center"
+          >
+            Commencer la visite
+          </h2>
+          <a
+            href="#About"
+            class="bg-greenB py-2 px-3 flex justify-center items-center cursor-pointer transition-all duration-200 hover:bg-white hover:text-greenB"
+            ><i
+              class="fa-solid fa-arrow-down text-[35px] lg:text-[40px] xl:text-[44px] drop-shadow-lg"
+            ></i
+          ></a>
+        </article>
+      </section>
+    </header>
+    <!-- ---------------------------- MAIN ---------------------------- -->
+    <main class="overflow-hidden my-[60px]">
+      <!-- ---------------------------- SECTION ABOUT ---------------------------- -->
+      <section
+        id="About"
+        class="flex flex-col items-center mt-12 gap-[60px] About"
+      >
+        <!-- ---------------------------- About_INTRO ---------------------------- -->
+        <section class="flex flex-col items-center mb-9 w-full px-[40px]">
+          <h3
+            class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] h3-anim"
+          >
+            A propos
+          </h3>
+          <div class="flex flex-col items-center gap-8">
+            <p
+              class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenB rounded-2xl sm:hidden AboutC"
+            >
+              Je m’appelle Elias Duvernois et j’ai 21 ans, je suis actuellement
+              étudiant en 2éme année d’un bachelor développeur Web à Paris à
+              l’Ecole Multimedia.
+            </p>
 
-						<figure
-							class="rounded-[50%] bg-greenB p-2 w-[80%] sm:hidden AboutC">
-							<img
-								src="./assets/img/informatique.jpg"
-								class="w-full rounded-[50%]"
-								alt="imformatique" />
-						</figure>
+            <figure
+              class="rounded-[50%] bg-greenB p-2 w-[80%] sm:hidden AboutC"
+            >
+              <img
+                src="./assets/img/informatique.jpg"
+                class="w-full rounded-[50%]"
+                alt="imformatique"
+              />
+            </figure>
 
-						<p
-							class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenYellow rounded-2xl sm:hidden AboutC">
-							J’ai découvert le développement grâce à ma passion pour les jeux
-							vidéo et j’ai aussi un attrait pour l’animation. C’est pour cela
-							que j’ai choisi de me lancer dans le développement web où je peux
-							combiner ces deux choses pour créer et réaliser des projets à mon
-							image.
-						</p>
+            <p
+              class="text-base sm:text-[18px] p-4 border-4 bg-greenD border-greenYellow rounded-2xl sm:hidden AboutC"
+            >
+              J’ai découvert le développement grâce à ma passion pour les jeux
+              vidéo et j’ai aussi un attrait pour l’animation. C’est pour cela
+              que j’ai choisi de me lancer dans le développement web où je peux
+              combiner ces deux choses pour créer et réaliser des projets à mon
+              image.
+            </p>
 
-						<figure class="rounded-[50%] p-2 w-[80%] sm:hidden AboutC">
-							<img
-								src="./assets/img/Group 1.svg"
-								class="w-full rounded-[50%]"
-								alt="imformatique" />
-						</figure>
-						<img
-							src="./assets/img/Group 2.svg"
-							alt="about-text"
-							class="w-full hidden sm:block img-anim" />
-					</div>
-				</section>
-				<!-- ---------------------------- About_Skill ---------------------------- -->
-				<section class="relative mb-9 w-full Skill">
-					<div
-						class="absolute top-0 left-[-10%] w-[120%] h-[110%] rotate-3 bg-greenS -z-10 bg-anim"></div>
-					<section class="flex flex-col items-center p-[40px]">
-						<h3
-							class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow after:w-[190px] md:after:w-[190px] lg:after:w-[250px] lg:after:h-[8px] SkillT-anim">
-							Technologies
-						</h3>
-						<div
-							class="flex flex-row flex-wrap justify-center md:justify-start items-center gap-4">
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-html5 text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">HTML</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-css3-alt text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">CSS</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-bootstrap text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">Bootstrap</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-js text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">Javascript</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-git-alt text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">GIT</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-react text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">React</h4>
-							</article>
-							<article
-								class="flex flex-col items-center p-3 gap-4 Skill-tec-anim">
-								<i
-									class="fa-brands fa-figma text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"></i>
-								<h4 class="font-bold text-2xl lg:text-[28px]">Figma</h4>
-							</article>
-						</div>
-					</section>
-				</section>
-				<!-- ---------------------------- About_EDUCATION---------------------------- -->
-				<section
-					class="flex flex-col items-center sm:items-end justify-center p-[40px] w-full mb-9 Educ">
-					<h3
-						class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow after:w-[180px] lg:after:h-[8px] EducT-anim">
-						Education
-					</h3>
-					<!-- BAC Title -->
-					<div
-						class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 mb-[20px] sm:ml-[60px] EducP">
-						<article
-							class="flex flex-row gap-3 justify-start items-center w-full">
-							<h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
-								BAC STI2D
-							</h4>
-							<span
-								class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
-								>2018-2019</span
-							>
-						</article>
-						<p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
-							Lycée Gustave Eiffel - Gagny
-						</p>
-					</div>
-					<!-- License -->
-					<div
-						class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 mb-[20px] sm:ml-[60px] EducP">
-						<article
-							class="flex flex-row gap-3 justify-start items-center w-full">
-							<h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
-								License Anglais
-							</h4>
-							<span
-								class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
-								>2019-2020</span
-							>
-						</article>
-						<p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
-							Université Paris 8 - Saint-Denis
-						</p>
-					</div>
-					<!-- Bachelor -->
-					<div
-						class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 sm:ml-[60px] EducP">
-						<article
-							class="flex flex-col gap-3 justify-start items-start w-full">
-							<h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
-								Bachelor Développeur Web
-							</h4>
-							<span
-								class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
-								>2021-Aujourd’hui</span
-							>
-						</article>
-						<p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
-							Ecole Multimedia - Paris
-						</p>
-					</div>
-				</section>
-			</section>
-			<!-- ---------------------------- PROJECT ---------------------------- -->
-			<section class="relative mb-9 w-full pt-10 Project" id="Project">
-				<div
-					class="absolute top-0 left-[-10%] w-[120%] h-[103%] -rotate-3 bg-greenS -z-10 bg-anim2"></div>
-				<!-- ---------------------------- Bootsrap ---------------------------- -->
-				<section class="flex flex-col items-center p-[40px]">
-					<h3
-						class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] ProjectT-anim">
-						Projet
-					</h3>
-					<div
-						class="flex flex-col items-center lg:flex-row gap-6 lg:items-start BootstrapP">
-						<figure class="w-full lg:w-1/2 BootstrapI">
-							<img
-								src="./assets/img/Bootstrap.PNG "
-								alt="projetc"
-								class="w-fit rounded-[12px]" />
-						</figure>
-						<article class="flex flex-col gap-4 lg:w-1/2">
-							<h6
-								class="font-bold text-[20px] sm:text-[25px] md:text-[28px] BootstrapT">
-								Clone d’une page d’acceuil
-							</h6>
-							<p class="text-[15px] sm:text-[20px] md:text-[25px] BootstrapT">
-								Projet d’école dans lequel on devait reproduire une landing page
-								et effectuer le responsive en utlisant la bibliothèque Bootstrap
-							</p>
-							<span
-								class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] BootstrapT"
-								>HTML - CSS - Bootstrap</span
-							>
-							<div class="flex flex-row items-center gap-2 BootstrapT">
-								<a
-									class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
-									href="./assets/Project/bootstrap Projet/index.html"
-									>Visitez le projet</a
-								>
-								<a
-									href="https://github.com/Eliasf1912/Bootstrap-debut"
-									class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
-									><i
-										class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"></i
-								></a>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- ---------------------------- Todolist ---------------------------- -->
-				<section class="flex flex-col items-center p-[40px]">
-					<div
-						class="flex flex-col items-center lg:flex-row gap-6 lg:items-start TodolistP">
-						<figure class="w-full lg:w-1/2 TodolistI">
-							<img
-								src="./assets/img/todolist.png"
-								alt="projetc Bootstrap"
-								class="w-fit rounded-[12px]" />
-						</figure>
-						<article class="flex flex-col gap-4 lg:w-1/2">
-							<h6
-								class="font-bold text-[20px] sm:text-[25px] md:text-[28px] TodolistT">
-								Todolist
-							</h6>
-							<p class="text-[15px] sm:text-[20px] md:text-[25px] TodolistT">
-								Projet d’école dans lequel on devait réaliser une liste des
-								tâches à faire
-							</p>
-							<span
-								class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] TodolistT"
-								>React</span
-							>
-							<div class="flex flex-row items-center gap-2 TodolistT">
-								<a
-									class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
-									href="https://eliasf1912.github.io/TodoList/"
-									>Visitez le projet</a
-								>
-								<a
-									href="https://github.com/Eliasf1912/TodoList"
-									class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
-									><i
-										class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"></i
-								></a>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- ---------------------------- Trustfall ---------------------------- -->
-				<section class="flex flex-col items-center p-[40px]">
-					<div
-						class="flex flex-col items-center lg:flex-row gap-6 lg:items-start TrustfallP">
-						<figure class="w-full lg:w-1/2 TrustfallI">
-							<img
-								src="./assets/img/trusfall.png"
-								alt="projetc Bootstrap"
-								class="w-fit rounded-[12px]" />
-						</figure>
-						<article class="flex flex-col gap-4 lg:w-1/2">
-							<h6
-								class="font-bold text-[20px] sm:text-[25px] md:text-[28px] TrustfallT">
-								Labs 2023
-							</h6>
-							<p class="text-[15px] sm:text-[20px] md:text-[25px] TrustfallT">
-								Projet de fin d'année dans lequel on devait réaliser un site Web
-								pour la promotion de l'album de Pink intitulé "Trustfall"
-							</p>
-							<span
-								class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] TrustfallT"
-								>React</span
-							>
-							<div class="flex flex-row items-center gap-2 TrustfallT">
-								<a
-									class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
-									href="https://eliasf1912.github.io/Labs2023-SITE/"
-									>Visitez le projet</a
-								>
-								<a
-									href="https://github.com/Eliasf1912/Labs2023-SITE"
-									class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
-									><i
-										class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"></i
-								></a>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- ---------------------------- Cardgame ---------------------------- -->
-				<section class="flex flex-col items-center p-[40px]">
-					<div
-						class="flex flex-col items-center lg:flex-row gap-6 lg:items-start cardGameP">
-						<figure class="w-full lg:w-1/2 TrustfallI">
-							<img
-								src="./assets/img/Cardgame.png"
-								alt="Cardgame"
-								class="w-fit rounded-[12px]" />
-						</figure>
-						<article class="flex flex-col gap-4 lg:w-1/2">
-							<h6
-								class="font-bold text-[20px] sm:text-[25px] md:text-[28px] CardGameT">
-								CardGame
-							</h6>
-							<p class="text-[15px] sm:text-[20px] md:text-[25px] CardGameT">
-								Petit projet personnel ou j'ai réaliser un jeux où il faut
-								retrouver chaque paires.
-							</p>
-							<span
-								class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] CardGameT"
-								>HTML - CSS - JS</span
-							>
-							<div class="flex flex-row items-center gap-2 CardGameT">
-								<a
-									class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
-									href="./assets/Project/Memory card game Project/index.html"
-									>Visitez le projet</a
-								>
-								<a
-									href="#"
-									class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
-									><i
-										class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB">
-									</i
-								></a>
-							</div>
-						</article>
-					</div>
-				</section>
-				<!-- ---------------------------- VideoPLayer ---------------------------- -->
-				<section class="flex flex-col items-center p-[40px]">
-					<div
-						class="flex flex-col items-center lg:flex-row gap-6 lg:items-start videoPLayerP">
-						<figure class="w-full lg:w-1/2 TrustfallI">
-							<img
-								src="./assets/img/videoplayer.png"
-								alt="Cardgame"
-								class="w-fit rounded-[12px]" />
-						</figure>
-						<article class="flex flex-col gap-4 lg:w-1/2">
-							<h6
-								class="font-bold text-[20px] sm:text-[25px] md:text-[28px] videoPLayerT">
-								Lecteur vidéo personalisé
-							</h6>
-							<p class="text-[15px] sm:text-[20px] md:text-[25px] videoPLayerT">
-								Un des petit projet des "30 days javascript" où je devais
-								réaliser un lecteur vidéo personalisée.
-							</p>
-							<span
-								class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] videoPLayerT"
-								>HTML - CSS - JS</span
-							>
-							<div class="flex flex-row items-center gap-2 videoPLayerT">
-								<a
-									class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
-									href="./assets/Project/videoplayer custom/index.html"
-									>Visitez le projet</a
-								>
-								<a
-									href="#"
-									class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
-									><i
-										class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB">
-									</i
-								></a>
-							</div>
-						</article>
-					</div>
-				</section>
-			</section>
-			<!-- ---------------------------- CONTACT ---------------------------- -->
-			<section
-				class="p-[40px] w-full mt-15 md:mt-20 flex flex-col items-start gap-5 Contact"
-				id="Contact">
-				<h3
-					class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[30px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] ContactH3">
-					Contact
-				</h3>
-				<p
-					class="font-normal text-[18px] sm:text-[20px] md:sm:text-[25px] ContactT">
-					Mon profil vous intéresse ? Vous voulez discuter ? Me poser des
-					questions ? Vous trouverez mes contacts juste en dessous. N’hésitez
-					pas je vous repondrai volontiers.
-				</p>
-				<article
-					class="flex flex-row justify-start items-center gap-3 ContactT Ct">
-					<i
-						class="fa-brands fa-github text-[45px] lg:text-[55px] text-greenB"></i
-					><a
-						href="https://github.com/Eliasf1912"
-						class="transition-all duration-200 hover:underline font-semibold text-[20px] sm:text-[28px]"
-						>Eliasf1912</a
-					>
-				</article>
-				<article
-					class="flex flex-row justify-start items-center gap-3 ContactT">
-					<i
-						class="fa-brands fa-linkedin text-[45px] lg:text-[55px] text-greenB"></i
-					><a
-						href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
-						class="transition-all duration-200 hover:underline font-semibold text-[20px] sm:text-[28px]"
-						>Elias Duvernois</a
-					>
-				</article>
-				<article
-					class="flex flex-row justify-start items-center gap-3 ContactT">
-					<i class="fa-solid fa-at text-[45px] lg:text-[55px] text-greenB"></i
-					><a
-						href="mailto:e.duvernois2016@gmail.com"
-						class="transition-all duration-200 hover:underline font-semibold text-[16px] sm:text-[25px]"
-						>e.duvernois2016@gmail.com</a
-					>
-				</article>
-			</section>
-		</main>
-		<footer
-			class="bg-greenB flex flex-row justify-between items-center p-4 Footer overflow-hidden">
-			<h4
-				class="text-[20px] sm:text-[25px] md:text-[25px] lg:md:text-[30px] font-bold FooterC">
-				<span class="text-greenYellow">E</span>lias
-				<span class="text-greenYellow">D</span>uvernois
-			</h4>
-			<section class="flex flex-row items-center gap-3">
-				<a
-					href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
-					class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 FooterC"
-					><i
-						class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] lg:text-[35px] text-greenYellow"></i
-				></a>
-				<a
-					href="https://github.com/Eliasf1912"
-					class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 FooterC"
-					><i
-						class="fa-brands fa-github text-[25px] sm:text-[30px] lg:text-[35px] text-greenYellow"></i
-				></a>
-				<a
-					href="./assets/img/CV ELIAS2 (1).pdf"
-					class="bg-greenD shadow-lg text-[22px] sm:text-[25px] lg:text-[30px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB FooterC"
-					>CV</a
-				>
-			</section>
-		</footer>
-	</body>
+            <figure class="rounded-[50%] p-2 w-[80%] sm:hidden AboutC">
+              <img
+                src="./assets/img/Group 1.svg"
+                class="w-full rounded-[50%]"
+                alt="imformatique"
+              />
+            </figure>
+            <img
+              src="./assets/img/Group 2.svg"
+              alt="about-text"
+              class="w-full hidden sm:block img-anim"
+            />
+          </div>
+        </section>
+        <!-- ---------------------------- About_Skill ---------------------------- -->
+        <section class="relative mb-9 w-full Skill">
+          <div
+            class="absolute top-0 left-[-10%] w-[120%] h-[110%] rotate-3 bg-greenS -z-10 bg-anim"
+          ></div>
+          <section class="flex flex-col items-center p-[40px]">
+            <h3
+              class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow after:w-[190px] md:after:w-[190px] lg:after:w-[250px] lg:after:h-[8px] SkillT-anim"
+            >
+              Technologies
+            </h3>
+            <div
+              class="flex flex-row flex-wrap justify-center md:justify-start items-center gap-4"
+            >
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-html5 text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">HTML</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-css3-alt text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">CSS</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-bootstrap text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">Bootstrap</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-js text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">Javascript</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-git-alt text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">GIT</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-react text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">React</h4>
+              </article>
+              <article
+                class="flex flex-col items-center p-3 gap-4 Skill-tec-anim"
+              >
+                <i
+                  class="fa-brands fa-figma text-[90px] lg:text-[110px] xl:text-[130px] text-greenB"
+                ></i>
+                <h4 class="font-bold text-2xl lg:text-[28px]">Figma</h4>
+              </article>
+            </div>
+          </section>
+        </section>
+        <!-- ---------------------------- About_EDUCATION---------------------------- -->
+        <section
+          class="flex flex-col items-center sm:items-end justify-center p-[40px] w-full mb-9 Educ"
+        >
+          <h3
+            class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow after:w-[180px] lg:after:h-[8px] EducT-anim"
+          >
+            Education
+          </h3>
+          <!-- BAC Title -->
+          <div
+            class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 mb-[20px] sm:ml-[60px] EducP"
+          >
+            <article
+              class="flex flex-row gap-3 justify-start items-center w-full"
+            >
+              <h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
+                BAC STI2D
+              </h4>
+              <span
+                class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
+                >2018-2019</span
+              >
+            </article>
+            <p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
+              Lycée Gustave Eiffel - Gagny
+            </p>
+          </div>
+          <!-- License -->
+          <div
+            class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 mb-[20px] sm:ml-[60px] EducP"
+          >
+            <article
+              class="flex flex-row gap-3 justify-start items-center w-full"
+            >
+              <h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
+                License Anglais
+              </h4>
+              <span
+                class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
+                >2019-2020</span
+              >
+            </article>
+            <p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
+              Université Paris 8 - Saint-Denis
+            </p>
+          </div>
+          <!-- Bachelor -->
+          <div
+            class="flex flex-col items-start md:self-start cs-div relative w-full ml-4 educ sm:pl-7 sm:ml-[60px] EducP"
+          >
+            <article
+              class="flex flex-col gap-3 justify-start items-start w-full"
+            >
+              <h4 class="text-[22px] sm:text-[25px] md:text-[28px] font-bold">
+                Bachelor Développeur Web
+              </h4>
+              <span
+                class="text-[20px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-normal"
+                >2021-Aujourd’hui</span
+              >
+            </article>
+            <p class="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[29px]">
+              Ecole Multimedia - Paris
+            </p>
+          </div>
+        </section>
+      </section>
+      <!-- ---------------------------- PROJECT ---------------------------- -->
+      <section class="relative mb-9 w-full pt-10 Project" id="Project">
+        <div
+          class="absolute top-0 left-[-10%] w-[120%] h-[103%] -rotate-3 bg-greenS -z-10 bg-anim2"
+        ></div>
+        <!-- ---------------------------- Bootsrap ---------------------------- -->
+        <section class="flex flex-col items-center p-[40px]">
+          <h3
+            class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[60px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] ProjectT-anim"
+          >
+            Projet
+          </h3>
+          <div
+            class="flex flex-col items-center lg:flex-row gap-6 lg:items-start BootstrapP"
+          >
+            <figure class="w-full lg:w-1/2 BootstrapI">
+              <img
+                src="./assets/img/Bootstrap.PNG "
+                alt="projetc"
+                class="w-fit rounded-[12px]"
+              />
+            </figure>
+            <article class="flex flex-col gap-4 lg:w-1/2">
+              <h6
+                class="font-bold text-[20px] sm:text-[25px] md:text-[28px] BootstrapT"
+              >
+                Clone d’une page d’acceuil
+              </h6>
+              <p class="text-[15px] sm:text-[20px] md:text-[25px] BootstrapT">
+                Projet d’école dans lequel on devait reproduire une landing page
+                et effectuer le responsive en utlisant la bibliothèque Bootstrap
+              </p>
+              <span
+                class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] BootstrapT"
+                >HTML - CSS - Bootstrap</span
+              >
+              <div class="flex flex-row items-center gap-2 BootstrapT">
+                <a
+                  class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
+                  href="./assets/Project/bootstrap Projet/index.html"
+                  >Visitez le projet</a
+                >
+                <a
+                  href="https://github.com/Eliasf1912/Bootstrap-debut"
+                  class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
+                  ><i
+                    class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"
+                  ></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- ---------------------------- Todolist ---------------------------- -->
+        <section class="flex flex-col items-center p-[40px]">
+          <div
+            class="flex flex-col items-center lg:flex-row gap-6 lg:items-start TodolistP"
+          >
+            <figure class="w-full lg:w-1/2 TodolistI">
+              <img
+                src="./assets/img/todolist.png"
+                alt="projetc Bootstrap"
+                class="w-fit rounded-[12px]"
+              />
+            </figure>
+            <article class="flex flex-col gap-4 lg:w-1/2">
+              <h6
+                class="font-bold text-[20px] sm:text-[25px] md:text-[28px] TodolistT"
+              >
+                Todolist
+              </h6>
+              <p class="text-[15px] sm:text-[20px] md:text-[25px] TodolistT">
+                Projet d’école dans lequel on devait réaliser une liste des
+                tâches à faire
+              </p>
+              <span
+                class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] TodolistT"
+                >React</span
+              >
+              <div class="flex flex-row items-center gap-2 TodolistT">
+                <a
+                  class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
+                  href="https://eliasf1912.github.io/TodoList/"
+                  >Visitez le projet</a
+                >
+                <a
+                  href="https://github.com/Eliasf1912/TodoList"
+                  class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
+                  ><i
+                    class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"
+                  ></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- ---------------------------- Trustfall ---------------------------- -->
+        <section class="flex flex-col items-center p-[40px]">
+          <div
+            class="flex flex-col items-center lg:flex-row gap-6 lg:items-start TrustfallP"
+          >
+            <figure class="w-full lg:w-1/2 TrustfallI">
+              <img
+                src="./assets/img/trusfall.png"
+                alt="projetc Bootstrap"
+                class="w-fit rounded-[12px]"
+              />
+            </figure>
+            <article class="flex flex-col gap-4 lg:w-1/2">
+              <h6
+                class="font-bold text-[20px] sm:text-[25px] md:text-[28px] TrustfallT"
+              >
+                Labs 2023
+              </h6>
+              <p class="text-[15px] sm:text-[20px] md:text-[25px] TrustfallT">
+                Projet de fin d'année dans lequel on devait réaliser un site Web
+                pour la promotion de l'album de Pink intitulé "Trustfall"
+              </p>
+              <span
+                class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] TrustfallT"
+                >React</span
+              >
+              <div class="flex flex-row items-center gap-2 TrustfallT">
+                <a
+                  class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
+                  href="https://eliasf1912.github.io/Labs2023-SITE/"
+                  >Visitez le projet</a
+                >
+                <a
+                  href="https://github.com/Eliasf1912/Labs2023-SITE"
+                  class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
+                  ><i
+                    class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"
+                  ></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- ---------------------------- Cardgame ---------------------------- -->
+        <section class="flex flex-col items-center p-[40px]">
+          <div
+            class="flex flex-col items-center lg:flex-row gap-6 lg:items-start cardGameP"
+          >
+            <figure class="w-full lg:w-1/2 TrustfallI">
+              <img
+                src="./assets/img/Cardgame.png"
+                alt="Cardgame"
+                class="w-fit rounded-[12px]"
+              />
+            </figure>
+            <article class="flex flex-col gap-4 lg:w-1/2">
+              <h6
+                class="font-bold text-[20px] sm:text-[25px] md:text-[28px] CardGameT"
+              >
+                CardGame
+              </h6>
+              <p class="text-[15px] sm:text-[20px] md:text-[25px] CardGameT">
+                Petit projet personnel ou j'ai réaliser un jeux où il faut
+                retrouver chaque paires.
+              </p>
+              <span
+                class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] CardGameT"
+                >HTML - CSS - JS</span
+              >
+              <div class="flex flex-row items-center gap-2 CardGameT">
+                <a
+                  class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
+                  href="./assets/Project/Memory card game Project/index.html"
+                  >Visitez le projet</a
+                >
+                <a
+                  href="#"
+                  class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
+                  ><i
+                    class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"
+                  >
+                  </i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- ---------------------------- VideoPLayer ---------------------------- -->
+        <section class="flex flex-col items-center p-[40px]">
+          <div
+            class="flex flex-col items-center lg:flex-row gap-6 lg:items-start videoPLayerP"
+          >
+            <figure class="w-full lg:w-1/2 TrustfallI">
+              <img
+                src="./assets/img/videoplayer.png"
+                alt="Cardgame"
+                class="w-fit rounded-[12px]"
+              />
+            </figure>
+            <article class="flex flex-col gap-4 lg:w-1/2">
+              <h6
+                class="font-bold text-[20px] sm:text-[25px] md:text-[28px] videoPLayerT"
+              >
+                Lecteur vidéo personalisé
+              </h6>
+              <p class="text-[15px] sm:text-[20px] md:text-[25px] videoPLayerT">
+                Un des petit projet des "30 days javascript" où je devais
+                réaliser un lecteur vidéo personalisée.
+              </p>
+              <span
+                class="text-greenYellow font-semibold text-[20px] sm:text-[25px] md:text-[28px] videoPLayerT"
+                >HTML - CSS - JS</span
+              >
+              <div class="flex flex-row items-center gap-2 videoPLayerT">
+                <a
+                  class="bg-greenB px-3 py-2 text-[20px] sm:text-[25px] md:text-[28px] rounded-[12px] cursor-pointer font-bold hover:text-greenB hover:bg-white"
+                  href="./assets/Project/videoplayer custom/index.html"
+                  >Visitez le projet</a
+                >
+                <a
+                  href="#"
+                  class="bg-greenB p-2 px-3 rounded-[12px] cursor-pointer font-bold hover:bg-white"
+                  ><i
+                    class="fa-brands fa-github text-[29px] sm:text-[30px] md:text-[41px] text-white hover:text-greenB"
+                  >
+                  </i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <!-- ---------------------------- CONTACT ---------------------------- -->
+      <section
+        class="p-[40px] w-full mt-15 md:mt-20 flex flex-col items-start gap-5 Contact"
+        id="Contact"
+      >
+        <h3
+          class="text-[28px] md:text-3xl lg:text-4xl font-bold self-start mb-[30px] relative after:bg-greenYellow md:after:w-[160px] lg:after:w-[180px] lg:after:h-[8px] ContactH3"
+        >
+          Contact
+        </h3>
+        <p
+          class="font-normal text-[18px] sm:text-[20px] md:sm:text-[25px] ContactT"
+        >
+          Mon profil vous intéresse ? Vous voulez discuter ? Me poser des
+          questions ? Vous trouverez mes contacts juste en dessous. N’hésitez
+          pas je vous repondrai volontiers.
+        </p>
+        <article
+          class="flex flex-row justify-start items-center gap-3 ContactT Ct"
+        >
+          <i
+            class="fa-brands fa-github text-[45px] lg:text-[55px] text-greenB"
+          ></i
+          ><a
+            href="https://github.com/Eliasf1912"
+            class="transition-all duration-200 hover:underline font-semibold text-[20px] sm:text-[28px]"
+            >Eliasf1912</a
+          >
+        </article>
+        <article
+          class="flex flex-row justify-start items-center gap-3 ContactT"
+        >
+          <i
+            class="fa-brands fa-linkedin text-[45px] lg:text-[55px] text-greenB"
+          ></i
+          ><a
+            href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
+            class="transition-all duration-200 hover:underline font-semibold text-[20px] sm:text-[28px]"
+            >Elias Duvernois</a
+          >
+        </article>
+        <article
+          class="flex flex-row justify-start items-center gap-3 ContactT"
+        >
+          <i class="fa-solid fa-at text-[45px] lg:text-[55px] text-greenB"></i
+          ><a
+            href="mailto:e.duvernois2016@gmail.com"
+            class="transition-all duration-200 hover:underline font-semibold text-[16px] sm:text-[25px]"
+            >e.duvernois2016@gmail.com</a
+          >
+        </article>
+      </section>
+    </main>
+    <footer
+      class="bg-greenB flex flex-row justify-between items-center p-4 Footer overflow-hidden"
+    >
+      <h4
+        class="text-[20px] sm:text-[25px] md:text-[25px] lg:md:text-[30px] font-bold FooterC"
+      >
+        <span class="text-greenYellow">E</span>lias
+        <span class="text-greenYellow">D</span>uvernois
+      </h4>
+      <section class="flex flex-row items-center gap-3">
+        <a
+          href="https://www.linkedin.com/in/elias-duvernois-1b440a213/"
+          class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 FooterC"
+          ><i
+            class="fa-brands fa-linkedin-in text-[25px] sm:text-[30px] lg:text-[35px] text-greenYellow"
+          ></i
+        ></a>
+        <a
+          href="https://github.com/Eliasf1912"
+          class="border-4 border-greenYellow p-2 rounded-[10px] flex justify-center items-center transition-all duration-200 hover:scale-105 FooterC"
+          ><i
+            class="fa-brands fa-github text-[25px] sm:text-[30px] lg:text-[35px] text-greenYellow"
+          ></i
+        ></a>
+        <a
+          href="./assets/img/CV ELIAS2 B.pdf"
+          class="bg-greenD shadow-lg text-[22px] sm:text-[25px] lg:text-[30px] font-bold p-2 rounded-[10px] transition-all duration-200 hover:bg-white hover:text-greenB FooterC"
+          >CV</a
+        >
+      </section>
+    </footer>
+  </body>
 </html>
